@@ -1,22 +1,14 @@
-let somma = 0;
-let numero = prompt("inserisci un numero");
-for (let i = 0; i < numero.length; i++) {
-    somma += parseInt(numero[i]);
+let arrayFirst = [1, 2, 3, 4, 5, 6, 7, 8, 8];
+let arraySecond = [1, 2, 3, 4, 5];
+let i = 0;
+let j = 0;
+let numeroCasuale = 0;
+for (i = 0; i < arrayFirst.length; i++) {
+    if (arraySecond.length !== arrayFirst.length) {
+        numeroCasuale = Math.floor(Math.random() * 10);
+        console.log(numeroCasuale);
+        arraySecond.push(numeroCasuale);
+    }
+    j++
 }
-console.log("La somma è: ", somma);
-
-/* soluzione alternativa
-let somma = 0;
-let numero = prompt("inserisci un numero");
-let intArr = Array.from(String(numero), Number);
-for (let i = 0; i < intArr.length; i++) {
-    somma += intArr[i];
-}
-console.log("la somma è: ", somma);
-
-Soluzione solo per n numeri definiti 
-somma = Math.floor((numero / 1) % 10); 
-somma += Math.floor((numero / 10) % 10);
-somma += Math.floor((numero / 100) % 10);
-somma += Math.floor((numero / 1000) % 10);
-*/
+console.log(arraySecond);
