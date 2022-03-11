@@ -6,6 +6,8 @@ let numeroCasuale = 0;
 for (i = 0; i < arrayFirst.length; i++) {
     if (arraySecond.length !== arrayFirst.length) {
         arraySecond.push(Math.floor(Math.random() * 10));
+    } else if (arrayFirst.length !== arraySecond.length) {
+        arrayFirst.push(Math.floor(Math.random() * 10));
     }
 }
-console.log(arraySecond.length);
+console.log(arraySecond.length, arrayFirst.length);
