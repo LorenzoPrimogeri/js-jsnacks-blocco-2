@@ -3,13 +3,17 @@
 let array = [];
 let i = 0;
 let somma = 0;
-
+/* soluzione con il for */
 for (i = 0; i < 5; i++) {
     let numero = parseInt(prompt("inserisci un numero"));
-    array.push(numero);
+    somma += numero;
 }
-for (i = 0; i < array.length; i++) {
-    somma += array[i];
+/* soluzione con il while
+while (i !== 5) {
+    let numero = parseInt(prompt("inserisci un numero"));
+    somma += numero;
+    i++;
 }
+*/
+console.log(somma);
 
-console.log("la somma è:", somma);
