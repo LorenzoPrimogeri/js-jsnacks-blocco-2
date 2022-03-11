@@ -5,10 +5,7 @@ let j = 0;
 let numeroCasuale = 0;
 for (i = 0; i < arrayFirst.length; i++) {
     if (arraySecond.length !== arrayFirst.length) {
-        numeroCasuale = Math.floor(Math.random() * 10);
-        console.log(numeroCasuale);
-        arraySecond.push(numeroCasuale);
+        arraySecond.push(Math.floor(Math.random() * 10));
     }
-    j++
 }
-console.log(arraySecond);
+console.log(arraySecond.length);
