@@ -1,13 +1,18 @@
-let arrayFirst = [1, 2, 3, 4, 5, 6, 7, 8, 8];
-let arraySecond = [1, 2, 3, 4, 5];
-let i = 0;
-let j = 0;
-let numeroCasuale = 0;
-for (i = 0; i < arrayFirst.length; i++) {
-    if (arraySecond.length !== arrayFirst.length) {
-        arraySecond.push(Math.floor(Math.random() * 10));
-    } else if (arrayFirst.length !== arraySecond.length) {
-        arrayFirst.push(Math.floor(Math.random() * 10));
-    }
+const primo = [2, 3, 53, 12, 6, 2, 123, 3, 12, 6, 2, 123, 3, 12, 6, 2, 123, 3, 12, 6, 2, 123];
+const secondo = [3, 12, 6, 2, 123, 3, 12, 6, 2, 123];
+let min;
+let max;
+if (primo.length < secondo.length) {
+    min = primo;
+    max = secondo;
+} else {
+    min = secondo;
+    max = primo;
 }
-console.log(arraySecond.length, arrayFirst.length);
+while (min.length < max.length) {
+    min.push(Math.floor(Math.random() * 5) + 1);
+}
+console.log('minore', min.length);
+console.log('maggiore', max.length);
+
+
